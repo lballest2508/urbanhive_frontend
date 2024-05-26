@@ -21,7 +21,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Urban Hive
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -65,7 +65,6 @@ export const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
