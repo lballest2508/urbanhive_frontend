@@ -176,14 +176,14 @@ export const UserList = () => {
                     <Button
                       variant="contained"
                       color="primary"
-                      startIcon={<EditIcon style={{marginLeft: '11px'}} />}
+                      startIcon={<EditIcon style={{ marginLeft: '11px' }} />}
                       onClick={() => handleOpenEditModal(user)}
-                      style={{ borderRadius: '80px', marginRight: '10px'}}
+                      style={{ borderRadius: '80px', marginRight: '10px' }}
                     >
                     </Button>
                     <Button
                       variant="contained"
-                      startIcon={<LockResetIcon style={{marginLeft: '11px'}} />}
+                      startIcon={<LockResetIcon style={{ marginLeft: '11px' }} />}
                       onClick={() => handleOpenModal(user)}
                       style={{ borderRadius: '80px' }}
                     >
