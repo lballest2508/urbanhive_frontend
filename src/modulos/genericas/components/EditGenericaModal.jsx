@@ -2,7 +2,6 @@ import { Box, Button, Grid, Input, Modal, TextField, Typography } from "@mui/mat
 import EditIcon from '@mui/icons-material/Edit';
 import { useState, useEffect } from "react";
 import { editGenerica, getGenericas } from "../utils/utils";
-import fsExtra from 'fs-extra';
 
 const style = {
   position: "absolute",
@@ -51,14 +50,6 @@ export const EditGenericaModal = ({ isOpen, handleClose, productDetails, setProd
         setProductos(data)
         const ruta_archivos = '../../../archivos_adjuntos';
         const filePath = `${ruta_archivos}/${archivo.name}`;
-        fsExtra.writeFile(filePath, archivo)
-          .then(() => {
-            console.log('Archivo guardado correctamente');
-            handleClose();
-          })
-          .catch((error) => {
-            console.error('Error saving file:', error);
-          });
       });
     });
   }
